@@ -6,13 +6,27 @@ using UnityEngine;
 
 public class GamePiece : MonoBehaviour
 {
-    [SerializeField] private int xIndex;
-    [SerializeField] private int yIndex;
+    public int xIndex { get; private set; }
+    public int yIndex { get; private set; }
+    
+    public MatchValue matchValue;
     
     private Board _board;
-    
     private bool _isMoving = false;
 
+
+    public enum MatchValue
+    {
+        Yellow,
+        Blue,
+        Magenta,
+        Indigo,
+        Green,
+        Teal,
+        Red,
+        Cyan,
+        Wild
+    }
     
     public void Init(Board board)
     {
@@ -24,21 +38,7 @@ public class GamePiece : MonoBehaviour
         xIndex = x;
         yIndex = y;
     }
-
-    private void Update()
-    {
-        /*
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            Move((int)(transform.position.x - 2),(int)(transform.position.y), 0.5f);
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            Move((int)(transform.position.x + 2),(int)(transform.position.y), 0.5f);
-        }
-        */
-    }
-
+    
     public void Move(int destX, int destY, float timeToMove)
     {
         if (!_isMoving)
