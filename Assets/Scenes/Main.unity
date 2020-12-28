@@ -322,6 +322,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &264426894
 Canvas:
   m_ObjectHideFlags: 0
@@ -496,9 +497,7 @@ MonoBehaviour:
   tilePrefab: {fileID: 7276651226811786361, guid: 379631c45ebb1a346b6f2929336155b7, type: 3}
   gamePiecePrefabs:
   - {fileID: 8511950099866334165, guid: 3b059347fb916634a87d596047bd0f0d, type: 3}
-  - {fileID: 7410519979576997589, guid: 882eb0acb7cf39347b096bef8965ef5f, type: 3}
   - {fileID: 4480493363540254253, guid: b5dd38e179836dd4cb1ca87d5243390f, type: 3}
   - {fileID: 6654979659107535282, guid: 1021adf3bd1c4b24fb3ab17191a92808, type: 3}
   - {fileID: 996800784709189033, guid: 5b589bd711f3355449e9ba074b52b37c, type: 3}
-  - {fileID: 3747926001358700549, guid: f7ec6868de72fc44899ba89068452443, type: 3}
   - {fileID: 734064282548729195, guid: b55d8a3c57a0ad94aae129ba4088b971, type: 3}
